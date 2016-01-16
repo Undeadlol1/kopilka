@@ -1,0 +1,38 @@
+// shrink content on desktop browsers
+@media (min-width: 1200px) {
+    .scroll {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+// vk login button is not suited for inoic. This is a workaround
+// note: font awesome were added for vk icon to appear
+#at-vk {
+    color: white;
+    background-color: #2B587A;
+    .fa-vk:before {
+        display: inline-block;
+        padding: 0 0 1px 0;
+        vertical-align: inherit;
+        font-size: 24px;
+        line-height: 41px;
+        pointer-events: none;
+    }
+}
+
+[name="atNavButton"] {
+    a {
+        width: 100%;
+        background-color: #888484 !important;
+        color: white !important;
+        margin: 10px 0;
+    }
+}
+
+//empty list item were collapsing other items
+#history {
+    .list .item {
+        height: 55px;
+    }
+}

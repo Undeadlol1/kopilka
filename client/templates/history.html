@@ -1,0 +1,22 @@
+<ion-view view-title="История" id="history">
+    <!-- <ion-nav-buttons side="right">
+        <a ng-href="#/tab/add-goal" class="button button-clear" ng-click="doSomething()">
+            <i class="icon ion-plus"></i>
+        </a>
+    </ion-nav-buttons> -->
+    <ion-content>
+        <ion-list>
+            <!-- #/{{g.id}} -->
+            <li ng-repeat="p in pays" class="item">{{ p.name }}
+                <span class="badge badge-positive">{{ p.amount }}</span>
+            </li>
+            <!-- <a ng-repeat="p in pays" href="" class="item item-thumbnail-left item-icon-right">
+                <img ng-src="{{ g.img }}">
+                <h1>{{p.active}}</h1>
+                <h2>{{ p.amount }}</h2>
+                <h4>{{ p.name }}</h4>
+                <i ng-click="makeActive(g)" class="icon ion-ios-checkmark-outline"></i>
+            </a> -->
+        </ion-list>
+    </ion-content>
+</ion-view>
