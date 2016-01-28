@@ -1,0 +1,10 @@
+<div ng-click="main.addMoney()" gold-sound class="list card">
+    <div class="item item-text-wrap" style="text-align: center;">
+        <h1 class="padding"><b count-to="{{main.savings}}" value="{{main.oldValue}}" duration="3" filter="currency" params="₽"></b></h1>
+        <h2>{{main.goal.amount}}</h2>
+    </div>
+    <div class="item item-image">
+        <img ng-src="{{main.goal.img}}" ng-if="main.goal.img">
+        <img ng-src="/piggy-bank.png" ng-if="main.goal && !main.goal.img">
+    </div>
+</div>

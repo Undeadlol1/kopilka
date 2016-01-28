@@ -14,9 +14,6 @@ tracker                 # Meteor's client-side reactive programming library
 standard-minifiers      # JS/CSS minifiers run for production mode
 es5-shim                # ECMAScript 5 compatibility for older browsers.
 
-autopublish             # Publish all data to the clients (for prototyping)
-insecure                # Allow all DB writes from clients (for prototyping)
-driftyco:ionic
 useraccounts:ionic
 urigo:angular-blaze-template
 accounts-facebook
@@ -28,3 +25,13 @@ angular
 fourseven:scss
 fortawesome:fontawesome
 check
+undeadlol1:ionic-angular-scss
+seba:ionic-sass
+hashwin:ionicons-sass
+accounts-password
+angular:angular-animate
+netanelgilad:angular-sortable-view
+yogiben:spinkit
+undeadlol1:angular-filter-count-to
+undeadlol1:angular-social
+undeadlol1:angular-socialshare

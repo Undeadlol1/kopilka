@@ -1,0 +1,30 @@
+<ion-view view-title="История" id="history">
+    <ion-content class="has-header">
+        <ion-list>
+            <ion-item class="item item-divider" ng-show="history.reminders">
+                Напоминания
+            </ion-item>
+            <ion-item ng-repeat="r in history.reminders" class="item" ng-dblclick="history.doneTask(r)">{{ r.name }}
+                <span class="badge badge-positive">{{ r.amount }}</span>
+                <ion-option-button class="button-assertive" ng-click="history.reversePay(r)">
+                    Отменить
+                </ion-option-button>
+                <ion-option-button class="button-positive" ng-click="history.editPay()">
+                    Редактировать
+                </ion-option-button>
+            </ion-item>
+            <ion-item class="item item-divider">
+                История
+            </ion-item>
+            <ion-item ng-repeat="p in history.pays" class="item">{{ p.name }}
+                <span class="badge badge-positive">{{ p.amount }}</span>
+                <ion-option-button class="button-assertive  " ng-click="history.reversePay(p)">
+                    Отменить
+                </ion-option-button>
+                <ion-option-button class="button-positive" ng-click="history.editPay()">
+                    Редактировать
+                </ion-option-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

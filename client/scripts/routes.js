@@ -22,81 +22,66 @@ function config($stateProvider, $urlRouterProvider) {
             url: '/main',
             views: {
                 'tab-main': {
-                    templateUrl: 'client/templates/main.html',
-                    controller: 'MainCtrl as main'
+                    template: '<main></main>'
                 }
             },
-            resolve: {
-                user: function($q, $timeout) {
-                        /* var deferred = $q.defer();
-                         var user;
-                         $timeout(function() {
-                             user = Meteor.users.findOne({
-                                 _id: Meteor.userId()
-                             });
-                         }, 3000);
-                         if (user) {
-                             console.log('user is defined');
-                             console.log(user);
-                             deferred.resolve(user);
-                         } else {
-                             deferred.reject(console.log('you fucked up'));
-                         }*/
-                        return true;
-                    }
-                    /*,
-                                    greeting: function($q, $timeout) {
-                                        var deferred = $q.defer();
-                                        $timeout(function() {
-                                            deferred.resolve('Hello!');
-                                        }, 3000);
-                                        return deferred.promise;
-                                    }*/
-            }
         }).state('tab.goals', {
             url: '/goals',
             views: {
                 'tab-goals': {
-                    templateUrl: 'client/templates/goals.html',
-                    controller: 'GoalsCtrl as gc'
+                    template: '<goals></goals>'
                 }
             }
-        }).state('tab.add', {
+        }).state('tab.addGoal', {
             url: '/add-goal',
             views: {
                 'tab-goals': {
-                    templateUrl: 'client/templates/add-goal.html',
-                    controller: 'AddGoalCtrl as ag'
+                    controller: 'AddGoalCtrl as addGoal',
+                    templateUrl: 'client/templates/add-goal.html'
+                        // template: '<add-goal></add-goal>'
                 }
             }
-        }).state('tab.edit', {
+        }).state('tab.editGoal', {
             url: '/edit-goal/:goalId',
             views: {
                 'tab-goals': {
-                    templateUrl: 'client/templates/edit-goal.html',
-                    controller: 'EditGoalCtrl as eg'
+                    controller: 'EditGoalCtrl as editGoal',
+                    templateUrl: 'client/templates/edit-goal.html'
                 }
             }
         }).state('tab.settings', {
             url: '/settings',
             views: {
                 'tab-settings': {
-                    templateUrl: 'client/templates/settings.html',
-                    controller: 'SettingsCtrl as st'
+                    template: '<settings></settings>'
                 }
             }
         }).state('tab.history', {
             url: '/history',
             views: {
                 'tab-history': {
-                    templateUrl: 'client/templates/history.html',
-                    controller: 'HistoryCtrl as ht'
+                    template: '<history></history>'
+                }
+            }
+        }).state('tab.tasks', {
+            url: '/tasks',
+            views: {
+                'tab-tasks': {
+                    template: '<tasks></tasks>'
+                }
+            }
+        }).state('tab.addTask', {
+            url: '/add-task',
+            views: {
+                'tab-tasks': {
+                    controller: 'AddTaskCtrl as addTask',
+                    templateUrl: 'client/templates/add-task.html'
+                        // template: '<add-task></add-task>'
                 }
             }
         }).state('signIn', {
             url: '/sign-in',
-            templateUrl: 'client/templates/accounts.html',
-            controller: 'AccountsCtrl as ac'
+            template: '<accounts></accounts>'
         });
 
     $urlRouterProvider.otherwise('tab/main');

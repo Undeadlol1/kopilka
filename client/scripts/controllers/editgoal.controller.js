@@ -2,15 +2,20 @@ angular
     .module('Whatsapp')
     .controller('EditGoalCtrl', EditGoalCtrl);
 
-function EditGoalCtrl($scope, $ionicLoading, $stateParams) {
-    $scope.helpers({
+function EditGoalCtrl($scope, $reactive, $ionicLoading, $stateParams) {
+    var wm = this;
+    $reactive(wm).attach($scope);
+    wm.subscribe('data');
+
+
+    wm.helpers({
         g: function() {
             return Goals.findOne({
                 _id: $stateParams.goalId
             });
         }
     });
-    $scope.editGoal = function(g) {
+    wm.editGoal = function(g) {
         Goals.update({
             _id: g._id
         }, {
@@ -20,7 +25,7 @@ function EditGoalCtrl($scope, $ionicLoading, $stateParams) {
                 img: g.img
             }
         });
-        $scope.g.img = g.img;
+        wm.g.img = g.img;
         $ionicLoading.show({
             template: 'Цель обновлена!',
             noBackdrop: true,

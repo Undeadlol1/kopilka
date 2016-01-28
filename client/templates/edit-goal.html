@@ -1,17 +1,17 @@
 <ion-view view-title="Редактировать цель">
     <ion-content>
-        <form class="list" ng-submit="editGoal(g);">
+        <form class="list" ng-submit="editGoal.editGoal(editGoal.g);">
             <label class="item item-input item-floating-label">
                 <span class="input-label">Название</span>
-                <input type="text" placeholder="Название" ng-required ng-model="g.name">
+                <input type="text" placeholder="Название" ng-required ng-model="editGoal.g.name">
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Необходимая сумма</span>
-                <input type="number" placeholder="Деньги" required ng-model="g.amount">
+                <input type="number" placeholder="Деньги" required ng-model="editGoal.g.amount">
             </label>
             <label class="item item-input item-floating-label">
                 <span class="input-label">Картинка (необязательно)</span>
-                <input type="url" placeholder="Url картинки (опционально)" ng-model="g.img">
+                <input type="url" placeholder="Url картинки (опционально)" ng-model="editGoal.g.img">
             </label>
             <button type="submit" class="item button button-positive button-full">
                 Сохранить
@@ -19,7 +19,8 @@
         </form>
         <div class="list card">
             <div class="item item-image">
-                <img ng-src="{{g.img}}">
+                <img ng-src="{{editGoal.g.img}}" ng-if="editGoal.g.img">
+                <img ng-src="/piggy-bank.png" ng-if="!editGoal.g.img">
             </div>
         </div>
     </ion-content>

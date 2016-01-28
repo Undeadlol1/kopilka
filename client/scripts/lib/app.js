@@ -2,7 +2,11 @@ angular
     .module('Whatsapp', [
         'angular-meteor',
         'ionic',
-        'countTo'
+        'countTo',
+        'ngAnimate',
+        'toastr',
+        'ngSocial',
+        '720kb.socialshare'
     ]);
 
 if (Meteor.isCordova) {

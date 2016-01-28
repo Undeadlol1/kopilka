@@ -1,0 +1,22 @@
+<ion-view view-title="Задачи">
+    <ion-nav-buttons side="left">
+        <button ng-click="tasks.showDelete = !tasks.showDelete" class="button button-icon icon ion-ios-minus-outline"></button>
+    </ion-nav-buttons>
+    <ion-nav-buttons side="right">
+        <a ng-href="#/tab/add-task" class="button button-clear">
+            <i class="icon ion-plus"></i>
+        </a>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <display-savings show-image="false"></display-savings>
+        <ion-list show-delete="tasks.showDelete">
+            <ion-item ng-repeat="t in tasks.tasks" class="item item-icon-right">
+                {{t.name}}
+                <h3>{{t.amount}}</h3>
+                <i ng-click="tasks.done(t)" class="icon positive ion-ios-checkmark-outline"></i>
+                <ion-delete-button class="ion-minus-circled" ng-click="tasks.removeTask(t)">
+                </ion-delete-button>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

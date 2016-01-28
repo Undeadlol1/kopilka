@@ -1,0 +1,17 @@
+<ion-view view-title="Добавить задачу">
+    <ion-content>
+        <form class="list" ng-submit="addTask.addTask(addTask.t); addTask.t='';">
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Название</span>
+                <input type="text" placeholder="Название" ng-required ng-model="addTask.t.name">
+            </label>
+            <label class="item item-input item-floating-label">
+                <span class="input-label">Награда</span>
+                <input type="number" placeholder="Деньги" required ng-model="addTask.t.amount">
+            </label>
+            <button type="submit" class="item button button-positive button-full">
+                Сохранить
+            </button>
+        </form>
+    </ion-content>
+</ion-view>

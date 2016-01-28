@@ -1,0 +1,19 @@
+<ion-view view-title="Цели">
+    <ion-nav-buttons side="right">
+        <a ng-href="#/tab/add-goal" class="button button-clear">
+            <i class="icon ion-plus"></i>
+        </a>
+    </ion-nav-buttons>
+    <ion-content class="has-header">
+        <ion-list ng-keypress="">
+            <a ng-repeat="g in goals.goals" ng-href="#/tab/edit-goal/{{g._id}}" class="item item-thumbnail-left item-icon-right">
+                <img ng-src="{{ g.img }}" ng-show="g.img">
+                <img ng-src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ac/No_image_available.svg/2000px-No_image_available.svg.png" ng-hide="g.img" class="thumbnail">
+                <h2>{{ g.name }}</h2>
+                <h4>{{ g.amount }}</h4>
+                <!-- preventDefault() to not activate link on element click -->
+                <i ng-click="goals.makeActive(g); $event.preventDefault();" class="icon positive" ng-class="g.active ? 'ion-ios-checkmark' : 'ion-ios-checkmark-outline'"></i>
+            </a>
+        </ion-list>
+    </ion-content>
+</ion-view>
