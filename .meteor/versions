@@ -69,7 +69,6 @@ mobile-status-bar@1.0.6
 mongo@1.1.3
 mongo-id@1.0.1
 mrt:accounts-vk@0.2.0
-netanelgilad:angular-sortable-view@0.0.13_1
 npm-bcrypt@0.7.8_2
 npm-mongo@1.4.39_1
 oauth@1.1.6
@@ -102,7 +101,6 @@ twitter@1.1.5
 ui@1.0.8
 undeadlol1:angular-filter-count-to@1.0.0
 undeadlol1:angular-social@1.0.0
-undeadlol1:angular-socialshare@1.0.0
 undeadlol1:ionic-angular-scss@1.0.0
 underscore@1.0.4
 urigo:angular-blaze-template@0.3.0
@@ -110,6 +108,7 @@ urigo:cancel-fastclick@0.0.2
 url@1.0.5
 useraccounts:core@1.13.1
 useraccounts:ionic@1.13.1
+vishalm:angular-toastr@1.5.0
 webapp@1.2.3
 webapp-hashing@1.0.5
 yogiben:spinkit@0.0.1

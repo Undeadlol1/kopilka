@@ -30,8 +30,7 @@ seba:ionic-sass
 hashwin:ionicons-sass
 accounts-password
 angular:angular-animate
-netanelgilad:angular-sortable-view
 yogiben:spinkit
 undeadlol1:angular-filter-count-to
 undeadlol1:angular-social
-undeadlol1:angular-socialshare
+vishalm:angular-toastr

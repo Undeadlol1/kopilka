@@ -5,8 +5,7 @@ angular
         'countTo',
         'ngAnimate',
         'toastr',
-        'ngSocial',
-        '720kb.socialshare'
+        'ngSocial'
     ]);
 
 if (Meteor.isCordova) {
