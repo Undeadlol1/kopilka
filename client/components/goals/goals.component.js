@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp').directive('goals', function() {
+    .module('kopilka').directive('goals', function() {
         return {
             restrict: 'E',
             // replcae is needed to prevent ionic css bugs

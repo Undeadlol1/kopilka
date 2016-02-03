@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .directive('goldSound', function() {
         // Runs during compile
         return {

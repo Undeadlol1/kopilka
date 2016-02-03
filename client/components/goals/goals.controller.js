@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .controller('GoalsCtrl', GoalsCtrl);
 
 function GoalsCtrl($scope, $reactive) {

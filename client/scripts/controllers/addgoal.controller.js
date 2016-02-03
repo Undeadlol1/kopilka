@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .controller('AddGoalCtrl', AddGoalCtrl);
 
 function AddGoalCtrl($scope, $reactive, $ionicLoading, toastr) {

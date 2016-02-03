@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .controller('MainCtrl', MainCtrl);
 
 function MainCtrl($scope, $reactive, $ionicPopup, $timeout, $rootScope) {

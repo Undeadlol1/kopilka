@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .controller('SettingsCtrl', SettingsCtrl);
 
 function SettingsCtrl($scope, $rootScope, $ionicPopup, $state) {

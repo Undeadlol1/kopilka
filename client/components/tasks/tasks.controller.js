@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .controller('TasksCtrl', TasksCtrl);
 
 function TasksCtrl($scope, $reactive, $state, toastr) {

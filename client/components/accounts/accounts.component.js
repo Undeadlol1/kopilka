@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp').directive('accounts', function() {
+    .module('kopilka').directive('accounts', function() {
         return {
             restrict: 'E',
             templateUrl: 'client/components/accounts/accounts.html',

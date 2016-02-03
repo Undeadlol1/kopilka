@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .directive('loading', function() {
         return {
             link: function($scope, el, iAttrs, controller) {

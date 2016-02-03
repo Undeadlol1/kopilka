@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .config(config);
 
 function config($stateProvider, $urlRouterProvider) {
@@ -87,7 +87,7 @@ function config($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('tab/main');
 }
 
-angular.module('Whatsapp').run(function($rootScope, $state) {
+angular.module('kopilka').run(function($rootScope, $state) {
     $rootScope.$on('$stateChangeError', function(event, toState, toParams, fromState, fromParams, error) {
         if (error === 'AUTH_REQUIRED') {
             $state.go('signIn');

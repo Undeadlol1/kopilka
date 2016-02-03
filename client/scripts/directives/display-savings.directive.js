@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp').directive('displaySavings', function() {
+    .module('kopilka').directive('displaySavings', function() {
         return {
             restrict: 'E',
             templateUrl: 'client/templates/display-savings.html',

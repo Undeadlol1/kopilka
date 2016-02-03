@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .controller('HistoryCtrl', HistoryCtrl);
 
 function HistoryCtrl($scope, $reactive) {

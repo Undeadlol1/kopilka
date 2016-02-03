@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .controller('AccountsCtrl', AccountsCtrl);
 
 function AccountsCtrl($scope, $state) {

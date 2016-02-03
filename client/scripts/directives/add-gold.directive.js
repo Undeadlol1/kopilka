@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp').directive('addGold', function($ionicPopup) {
+    .module('kopilka').directive('addGold', function($ionicPopup) {
         return {
             link: function($scope, iElm, iAttrs, controller) {
                 console.log('addGold directive is running');

@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .controller('EditGoalCtrl', EditGoalCtrl);
 
 function EditGoalCtrl($scope, $reactive, $ionicLoading, $stateParams) {

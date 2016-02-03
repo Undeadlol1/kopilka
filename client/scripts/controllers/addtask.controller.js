@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp')
+    .module('kopilka')
     .controller('AddTaskCtrl', AddTaskCtrl);
 
 function AddTaskCtrl($scope, $reactive, $ionicLoading, toastr) {

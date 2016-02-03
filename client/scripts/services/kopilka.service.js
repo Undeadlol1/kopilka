@@ -1,5 +1,5 @@
 angular
-    .module('Whatsapp').service('kopilka', function() {
+    .module('kopilka').service('kopilka', function() {
         return {
             getGoal: getGoal,
             getSavings: getSavings,
