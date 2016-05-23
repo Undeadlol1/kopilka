@@ -22,14 +22,16 @@ function config($stateProvider, $urlRouterProvider) {
             url: '/main',
             views: {
                 'tab-main': {
-                    template: '<main></main>'
+                    controller: 'MainCtrl as main',
+                    templateUrl: 'client/templates/main.html'
                 }
             },
         }).state('tab.goals', {
             url: '/goals',
             views: {
                 'tab-goals': {
-                    template: '<goals></goals>'
+                    controller: 'GoalsCtrl as goals',
+                    templateUrl: 'client/templates/goals.html'
                 }
             }
         }).state('tab.addGoal', {
@@ -38,7 +40,6 @@ function config($stateProvider, $urlRouterProvider) {
                 'tab-goals': {
                     controller: 'AddGoalCtrl as addGoal',
                     templateUrl: 'client/templates/add-goal.html'
-                        // template: '<add-goal></add-goal>'
                 }
             }
         }).state('tab.editGoal', {
@@ -53,21 +54,24 @@ function config($stateProvider, $urlRouterProvider) {
             url: '/settings',
             views: {
                 'tab-settings': {
-                    template: '<settings></settings>'
+                    controller: 'SettingsCtrl as settings',
+                    templateUrl: 'client/templates/settings.html'
                 }
             }
         }).state('tab.history', {
             url: '/history',
             views: {
                 'tab-history': {
-                    template: '<history></history>'
+                    controller: 'HistoryCtrl as history',
+                    templateUrl: 'client/templates/history.html'
                 }
             }
         }).state('tab.tasks', {
             url: '/tasks',
             views: {
                 'tab-tasks': {
-                    template: '<tasks></tasks>'
+                    controller: 'TasksCtrl as tasks',
+                    templateUrl: 'client/templates/tasks.html'
                 }
             }
         }).state('tab.addTask', {
@@ -76,12 +80,12 @@ function config($stateProvider, $urlRouterProvider) {
                 'tab-tasks': {
                     controller: 'AddTaskCtrl as addTask',
                     templateUrl: 'client/templates/add-task.html'
-                        // template: '<add-task></add-task>'
                 }
             }
         }).state('signIn', {
             url: '/sign-in',
-            template: '<accounts></accounts>'
+            controller: 'AccountsCtrl as accounts',
+            templateUrl: 'client/templates/accounts.html'
         });
 
     $urlRouterProvider.otherwise('tab/main');

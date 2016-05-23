@@ -1,0 +1,210 @@
+@import "../../bower_components/HTML5-Reset/assets/css/reset.css";
+@import "../../bower_components/bs-grid/dist/assets/stylesheets/bs-grid.css";
+@font-face {
+  font-family: PT Sans;
+  font-style: normal;
+  src: 'url(https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic)';
+}
+/*** ОСНОВНЫЕ СТИЛИ ***/
+body {
+  background: url("../images/bg.jpg") repeat center top;
+  color: #2f1b15;
+  font-family: PT Sans, sans-serif;
+}
+body input {
+  outline: none;
+}
+@media (min-width: 970px) {
+  .container {
+    width: 770px;
+  }
+}
+/*** ГОЛОВА ***/
+header {
+  padding: 50px 15px 0;
+}
+header img:nth-child(odd) {
+  float: left;
+  margin-top: 17px;
+}
+header img:nth-child(even) {
+  float: right;
+}
+@media (min-width: 970px) {
+  header.container {
+    width: 900px;
+  }
+}
+/*** ТЕЛО ***/
+main {
+  margin-bottom: 79px;
+/*** СЛАЙДЕР ***/
+}
+main img {
+  display: block;
+  margin: 30px auto 50px;
+}
+main .block-inputs label,
+main #date-input label {
+  font-size: 22.43px;
+  font-weight: bold;
+  color: #2f1b15;
+  float: left;
+  padding: 44px 0 0;
+}
+main .block-inputs span,
+main #date-input span {
+  overflow: hidden;
+  display: block;
+}
+main .block-inputs span input,
+main #date-input span input {
+  font: 30px Courier, serif;
+  color: #231f20;
+  width: 100%;
+  background-color: transparent;
+  padding: 15px;
+  margin-left: 15px;
+  border: none;
+  -webkit-border-image: url("../images/border.png") 2 0;
+       -o-border-image: url("../images/border.png") 2 0;
+          border-image: url("../images/border.png") 2 0;
+}
+main .small-text span {
+  font: 14px PT Sans, sans-serif;
+  color: #3d3d3d;
+}
+main .small-text span:first-of-type {
+  font-size: 28px;
+  float: left;
+  width: 3%;
+}
+main .small-text span:nth-of-type(2) {
+  float: right;
+  width: 97%;
+}
+main input[type=radio] {
+  width: 28px;
+  margin: 0;
+  padding: 44px 0 0 0;
+  opacity: 0;
+}
+main input[type=radio] + label {
+  display: inline-block;
+  background-image: url("../images/radio.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  padding: 44px 20px 10px 48px;
+  margin-left: 22px;
+  margin-right: -28px;
+  font-weight: bold;
+}
+main input[type=radio]:checked + label {
+  background-image: url("../images/checked-radio.png");
+  background-position: left bottom;
+}
+main h3 {
+  margin: 50px 0 20px;
+  font: 22.43px PT Sans, sans-serif;
+  font-weight: bold;
+}
+main #checkboxes input[type=checkbox] {
+  width: 28px;
+  margin: 0;
+  padding: 15px 0 0 0;
+  opacity: 0;
+}
+main #checkboxes input[type=checkbox] + label {
+  display: inline-block;
+  background-image: url("../images/checkbox.png");
+  background-position: left bottom;
+  background-repeat: no-repeat;
+  padding: 15px 0 0 24px;
+  margin-left: -22px;
+  font-weight: bold;
+}
+main #checkboxes input[type=checkbox]:checked + label {
+  background-image: url("../images/checked.png");
+  background-position: left bottom;
+}
+main #js-container {
+  position: relative;
+}
+main #js-container .pointer {
+  position: absolute;
+  margin: 0;
+  left: 97.4%;
+  -webkit-transition: left 0.5s;
+          transition: left 0.5s;
+}
+main #js-container input {
+  display: none;
+}
+main #js-container .radio1 {
+  left: 0.9%;
+}
+main #js-container .radio2 {
+  left: 20%;
+}
+main #js-container .radio3 {
+  left: 49%;
+  bottom: 21%;
+}
+main #js-container .radio4 {
+  left: 78%;
+  text-align: right;
+}
+main #js-container label {
+  position: absolute;
+  bottom: 35%;
+  font-size: 13px;
+  font-weight: bold;
+  background-image: none;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+main #date-input input {
+  width: auto !important;
+}
+/***  СТИЛИ РАЗНЫХ ЭКРАНОВ	***/
+@media (max-width: 650px) {
+  header img:nth-child(even) {
+    margin-top: -20px;
+  }
+  main .block-inputs span,
+  main #date-input span {
+    overflow: visible;
+  }
+  main .block-inputs span input,
+  main #date-input span input {
+    margin: 0;
+    width: 100% !important;
+  }
+  main label {
+    font-size: 17px !important;
+  }
+  main input {
+    font-size: 20px !important;
+  }
+  main #js-container .row {
+    margin: -20px 0 30px;
+  }
+  main #js-container label {
+    position: static;
+    display: block;
+    text-align: center;
+    padding: 10px;
+  }
+  main #js-container .radio4 {
+    text-align: center;
+  }
+}
+@media (max-width: 450px) {
+  header {
+    padding-top: 0;
+  }
+  header img:nth-child(even) {
+    display: none;
+  }
+}

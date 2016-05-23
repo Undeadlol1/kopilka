@@ -5,7 +5,7 @@ angular
 function TasksCtrl($scope, $reactive, $state, toastr) {
     $reactive(this).attach($scope);
     this.subscribe('data');
-    var vm = this;
+    const vm = this;
     // show delete button 
     vm.showDelete = false;
     vm.helpers({

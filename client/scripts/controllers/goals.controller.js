@@ -6,7 +6,7 @@ function GoalsCtrl($scope, $reactive) {
     $reactive(this).attach($scope);
     this.subscribe('data');
 
-    var vm = this;
+    const vm = this;
     vm.helpers({
         goals() {
             return Goals.find({

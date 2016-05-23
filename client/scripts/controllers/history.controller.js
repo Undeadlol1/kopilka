@@ -6,7 +6,7 @@ function HistoryCtrl($scope, $reactive) {
     $reactive(this).attach($scope);
     this.subscribe('data');
 
-    var vm = this;
+    const vm = this;
     //vm.listCanSwipe = true;
     vm.helpers({
         reminders() {
@@ -29,7 +29,7 @@ function HistoryCtrl($scope, $reactive) {
                         date: -1
                     }
                 });
-                /*var pays = Pays.find({
+                /*let pays = Pays.find({
                     userId: Meteor.userId(),
                     // THIS LINE IS EXPERIMENTAL
                     remind: undefined

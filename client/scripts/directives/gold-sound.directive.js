@@ -8,7 +8,7 @@ angular
                     // making sure there is no sound on startup
                     if (oldValue !== 0) {
                         if (oldValue !== newValue) {
-                            var audio = new Audio('/gold_coins.mp3');
+                            let audio = new Audio('/gold_coins.mp3');
                             audio.play();
                         }
                     }

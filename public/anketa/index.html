@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Анкета</title>
+    <link rel="stylesheet" type="text/css" href="dist/styles/main.min.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <!-- Заголовок -->
+    <header class="container">
+        <a href="index.html"><img src="dist/images/logo.png" height="52" width="154" alt="Логотип CSSSR"></a>
+        <img src="dist/images/zapolneno.png" height="106" width="252">
+    </header>
+    <!-- Тело документа -->
+    <main class="container">
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <img src="dist/images/delo.png" height="118" width="221">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-md-12">
+                <form>
+                    <!-- .block-inputs = инпуты во всю ширину экрана -->
+                    <div class="block-inputs">
+                        <div class="clearfix">
+                            <label for="name">Полное ФИО</label>
+                            <span><input type="text" id="name" value="Михаил Павлович Палей"></span>
+                        </div>
+                        <div class="clearfix">
+                            <label for="birth">Год рождения</label>
+                            <span><input type="number" id="birth" value="1991"></span>
+                        </div>
+                        <div class="clearfix">
+                            <label for="origin">Место жительства</label>
+                            <span><input type="text" id="origin" value="г. Челябинск"></span>
+                        </div>
+                        <div class="clearfix">
+                            <label for="skype">Skype</label>
+                            <span><input type="text" id="skype" value="paleyfreelance"></span>
+                        </div>
+                        <div class="clearfix">
+                            <label for="email">Почта</label>
+                            <span><input type="email" id="email" value="undeadlol1@mail.ru"></span>
+                        </div>
+                        <div class="clearfix">
+                            <label>Выпускник
+                                <a href="http://htmlacademy.ru">htmlacademy.ru</a>
+                            </label>
+                            <input type="radio" id="check1" name="academy" value="yes">
+                            <label for="check1">Да</label>
+                            <input type="radio" id="check2" name="academy" value="no" checked>
+                            <label for="check2">Нет</label>
+                        </div>
+                    </div>
+                    <div class="small-text">
+                        <h3>Практические навыки</h3>
+                        <span>*</span>
+                        <span>Отмeтьте только те технологии и типы задач, с которыми вы хорошо знакомы. Отсутствие опыта отнюдь не означает, что у вас меньше шансов стать нашим сотрудником. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</span>
+                    </div>
+                    <!-- Чекбоксы -->
+                    <div id="checkboxes" class="row">
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div>
+                                <input type="checkbox" value="bem">
+                                <label>Методология БЭМ</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="jquery">
+                                <label>Jquery</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="grunt">
+                                <label>Использую GRUNT</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="haml">
+                                <label>HAML</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="sass">
+                                <label>SASS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="less">
+                                <label>LESS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="cofee">
+                                <label>CoffeeScript</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div>
+                                <input type="checkbox" value="jade">
+                                <label>Jade</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="stylus">
+                                <label>Stylus</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="angular">
+                                <label>Знаю (изучаю) Angular</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="android">
+                                <label>Верстка под Android</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="ios">
+                                <label>Верстка под iOS</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="wp">
+                                <label>Верстка под WP</label>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                            <div>
+                                <input type="checkbox" value="mail">
+                                <label>Верстка рассылок</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="responsive">
+                                <label>Адаптивная верстка</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="dropbox">
+                                <label>Использую Dropbox</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="gmail">
+                                <label>Использую Gmail</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" value="github">
+                                <label>Использую GitHub</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Слайдер -->
+                    <h3>Уровень владения JavaScript</h3>
+                    <div id="js-container">
+                        <img class="pointer" src="dist/images/pointer.png" height="14" width="17">
+                        <div class="slider">
+                            <img src="dist/images/javascript.png" height="60" width="777">
+                        </div>
+                        <div class="row">
+                            <input id="radio1" type="radio" value="1" name="javascript">
+                            <label onclick="change(1)" class="radio1" for="javascript">Не владею</label>
+                            <input id="radio2" type="radio" value="2" name="javascript">
+                            <label onclick="change(2)" class="radio2" for="javascript">Использую готовые решения</label>
+                            <input id="radio3" type="radio" value="3" name="javascript">
+                            <label onclick="change(3)" class="radio3" for="javascript">Использую готовые решения
+                                <br/> и умею их переделывать</label>
+                            <input id="radio4" type="radio" value="4" name="javascript">
+                            <label onclick="change(4)" class="radio4" for="javascript">Пишу сложные скрипты</label>
+                        </div>
+                    </div>
+                    <!-- Дата заполнения -->
+                    <div id="date-input">
+                        <label for="date">Дата заполнения</label>
+                        <span>
+                            <input type="date" id="date" value="2001-02-02">
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript" src="bower_components/jqlite/jqlite.1.1.1.min.js"></script>
+    <script type="text/javascript" src="dist/scripts/main.min.js"></script>
+</body>
+
+</html>

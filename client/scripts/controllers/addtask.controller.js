@@ -5,7 +5,7 @@ angular
 function AddTaskCtrl($scope, $reactive, $ionicLoading, toastr) {
 
     $reactive(this).attach($scope);
-    var wm = this;
+    const wm = this;
     wm.subscribe('data');
 
     wm.helpers({});

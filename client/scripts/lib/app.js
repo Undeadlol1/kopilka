@@ -1,11 +1,12 @@
 angular
-    .module('Whatsapp', [
+    .module('kopilka', [
         'angular-meteor',
         'ionic',
         'countTo',
         'ngAnimate',
         'toastr',
-        'ngSocial'
+       // 'ngSocial',
+        '720kb.socialshare'
     ]);
 
 if (Meteor.isCordova) {
@@ -15,5 +16,5 @@ if (Meteor.isCordova) {
 }
 
 function onReady() {
-    angular.bootstrap(document, ['Whatsapp']);
+    angular.bootstrap(document, ['kopilka']);
 }

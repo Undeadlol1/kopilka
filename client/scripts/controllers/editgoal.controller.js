@@ -3,7 +3,7 @@ angular
     .controller('EditGoalCtrl', EditGoalCtrl);
 
 function EditGoalCtrl($scope, $reactive, $ionicLoading, $stateParams) {
-    var wm = this;
+    const wm = this;
     $reactive(wm).attach($scope);
     wm.subscribe('data');
 

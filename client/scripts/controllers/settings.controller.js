@@ -5,7 +5,7 @@ angular
 function SettingsCtrl($scope, $rootScope, $ionicPopup, $state) {
     $scope.helpers({});
     $scope.reset = function() {
-        var confirmPopup = $ionicPopup.confirm({
+        let confirmPopup = $ionicPopup.confirm({
             title: "Вы уверены?",
             template: 'Исправить это действие будет не возможно'
         });
